@@ -1,9 +1,11 @@
-var str1 = "Está é uma string";
-var str2 = "Está é outra string";
-var nome = "João";
-var idade = 20;
-console.log(nome + " tem " + idade + " anos.");
+function generateMessage(name,age,city) {
+  const message = `Olá meu nome é ${name}, tenho ${age} anos e moro em ${city}.`;
+  return message;
+}
+const personName= "Francyene";
+const personAge = "27";
+const personCity = "Serra/ES";
 
-console.log(`${nome} tem ${idade} anos
-e mora no ES`);
+const formattedMessage = generateMessage(personName,personAge, personCity);
 
+console.log(formattedMessage);
